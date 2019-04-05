@@ -1,5 +1,5 @@
 {
-  "name": "material-ui-app",
+  "name": "material-ui-reatcjs-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,8 @@
     "@material-ui/icons": "^3.0.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "react-virtualized": "^9.21.0"
   },
   "scripts": {
     "start": "react-scripts start",
