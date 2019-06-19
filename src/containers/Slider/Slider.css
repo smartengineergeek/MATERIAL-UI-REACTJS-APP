@@ -1,0 +1,11 @@
+.slider-img{
+    height: 200px;
+}
+.custom-arrow-next, .custom-arrow-prev{
+    padding: 1%;
+    cursor: pointer;
+}
+.mui-slider{
+    display: flex;
+    justify-content: space-between;
+}
