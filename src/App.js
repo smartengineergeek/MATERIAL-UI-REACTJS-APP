@@ -25,6 +25,7 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    /*
     [theme.breakpoints.down('sm')]: {
       backgroundColor: theme.palette.secondary.main
     },
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
     [theme.breakpoints.up('lg')]: {
       backgroundColor: 'grey'
     }
+    */
   },
   menuButton: {
     marginRight: theme.spacing(2),
