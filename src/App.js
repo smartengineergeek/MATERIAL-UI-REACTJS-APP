@@ -16,11 +16,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import { createMuiTheme } from '@material-ui/core/styles';
 
-// import Table from './containers/Table/Table';
-// import Cards from './containers/Cards/Cards';
-// import Grid from './containers/Grid/Grid';
-// import { ThemeProvider } from '@material-ui/styles';
-import ReactSlick from './containers/Slider/Slider';
+import Main from './Main';
 
 const theme = createMuiTheme({
   spacing: factor => `${0.25 * factor}rem`
@@ -145,7 +141,7 @@ export default function ButtonAppBar() {
       {/* <Table />
       <Cards /> 
       <Grid /> */}
-      <ReactSlick />
+      <Main />
     </div>
   );
 }
