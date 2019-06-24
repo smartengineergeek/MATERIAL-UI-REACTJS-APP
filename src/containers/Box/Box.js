@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import FormLabel from '@material-ui/core/FormLabel';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Paper from '@material-ui/core/Paper';
 import { withWindowSizeListener } from 'react-window-size-listener';
 
@@ -23,9 +23,9 @@ function SpacingGrid(props){
     const [spacing, setSpacing] = React.useState(2);
     const classes = useStyles();
 
-    function handleChange(event, value){
+/*    function handleChange(event, value){
         setSpacing(Number(value));
-    }
+    }*/
     return(
         <>
             <Grid container className={classes.root} spacing={2}>
