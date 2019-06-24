@@ -6,6 +6,7 @@ import TableCell from '@material-ui/core/TableCell';
 import Paper from '@material-ui/core/Paper';
 import { AutoSizer, Column, Table } from 'react-virtualized';
 import windowSize from 'react-window-size';
+import {withRouter} from 'react-router';
 
 const styles = theme => ({
   flexContainer: {
@@ -76,12 +77,17 @@ class MuiVirtualizedTable extends React.PureComponent {
     );
   };
 
+  onRowClick = (response) => {
+    console.log(this.props)
+    this.props.history.push('/table/edit?id='+response.rowData.id);
+  }
+
   render() {
     const { classes, columns, ...tableProps } = this.props;
     return (
       <AutoSizer>
         {({ height, width }) => (
-          <Table height={height} width={width} {...tableProps} rowClassName={this.getRowClassName}>
+          <Table height={height} width={width} {...tableProps} rowClassName={this.getRowClassName} onRowClick={this.onRowClick}>
             {columns.map(({ dataKey, ...other }, index) => {
               return (
                 <Column
@@ -114,7 +120,7 @@ MuiVirtualizedTable.propTypes = {
   rowHeight: PropTypes.number,
 };
 
-const VirtualizedTable = withStyles(styles)(MuiVirtualizedTable);
+const VirtualizedTable = withRouter(withStyles(styles)(MuiVirtualizedTable));
 
 // ---
 

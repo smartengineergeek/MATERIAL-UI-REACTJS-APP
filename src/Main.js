@@ -8,11 +8,13 @@ import Table from './containers/Table/Table';
 import ReactSlick from './containers/Slider/Slider';
 import Box from './containers/Box/Box';
 import MaterialTable from './containers/MaterialTable/MaterialTable';
+import Edit from './containers/Table/Edit';
 
 const Main = () => (
-    <main>
+  <main>
     <Switch>
       <Route exact path='/' component={ReactSlick}/>
+      <Route path='/table/edit' component={Edit} />
       <Route path='/table' component={Table}/>
       <Route path='/box' component={Box} />
       <Route path='/material-table' component={MaterialTable} />
